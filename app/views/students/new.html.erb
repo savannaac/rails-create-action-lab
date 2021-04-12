@@ -1,1 +1,14 @@
 <!-- Create your form here -->
+<h1>Student Form</h1>
+<form action="<%= students_path %>" method="post">
+    <label>first name:</label>
+    <input type="text" id="student_first_name" name="first_name"><br>
+    
+    <label>last name:</label>
+    <input type="text" id="student_last_name" name="last_name"><br><br>
+
+    <input type="submit" value="Submit Student">
+</form>
+
+<%= params.inspect %>
+
